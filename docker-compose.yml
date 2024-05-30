@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    command: ["python", "app.py"]
+
+  frontend-dev:
+    build:
+      context: ./frontend
+      target: dev
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - API_ENDPOINT=http://backend:5000/api/v1/run  # Adjust the URL as needed
+    depends_on:
+      - backend
+    command: ["npm", "start"]
+
+  frontend-prod:
+    build:
+      context: ./frontend
+      target: build
+      dockerfile: Dockerfile
+    ports:
+      - "8070:80"
+    environment:
+      - API_ENDPOINT=http://backend:5000/api/v1/run  # Adjust the URL as needed
+    depends_on:
+      - backend
