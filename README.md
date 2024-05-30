@@ -28,7 +28,7 @@ A powerful and intuitive Load Tester application built using Python, `wrk`, and 
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/load-tester.git
+   git clone https://github.com/reduanmasud/load-tester.git
    cd load-tester
    ```
 
