@@ -59,6 +59,21 @@ A powerful and intuitive Load Tester application built using Python, `wrk`, and 
    - Configure your test parameters
    - Start the test and monitor results in real-time
 
+### via Docker
+1. **Install Docker**:
+    ```sh
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sh get-docker.sh
+    ```
+2. **Clone the repository**:
+   ```sh
+   git clone https://github.com/reduanmasud/load-tester.git
+   cd load-tester
+   ```
+3. **Run the command**:
+    ```sh
+    docker compose up frontend-prod
+    ```
 #### Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas for improvements or new features.
