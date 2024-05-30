@@ -74,6 +74,11 @@ A powerful and intuitive Load Tester application built using Python, `wrk`, and 
     ```sh
     docker compose up frontend-prod
     ```
+4. **Configure and run a load test**:
+   - Access the frontend at `http://localhost:3000`
+   - Configure your test parameters
+   - Start the test and monitor results in real-time
+   
 #### Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas for improvements or new features.
