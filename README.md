@@ -2,6 +2,10 @@
 
 A powerful and intuitive Load Tester application built using Python, `wrk`, and React. This tool is designed to evaluate the performance and scalability of web applications under various load conditions, providing a comprehensive solution for developers and DevOps teams.
 
+### Preview
+![image](https://github.com/reduanmasud/load-tester/assets/59122533/23803a9b-a292-4269-94e6-3a73a2e43428)
+
+
 #### Key Features
 
 - **High Performance Load Generation**: Utilizes `wrk` to generate high levels of load with minimal resource consumption, simulating thousands of connections and requests per second.
